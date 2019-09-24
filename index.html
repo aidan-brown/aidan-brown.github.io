@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aidan Brown - Home</title>
-    <link rel="stylesheet" href="css/bootstrap.css" >
-<body>
-    <div class="navbar navbar-header navbar-fixed-top navbar-default">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
 
-      <p class="nav navbar-brand">Aidan Brown - Personal Web Portfollio</p>
+        <div class="nav-header">
+          <p class="navbar-brand">Aidan Brown</p>
+        </div>
 
-        <ul class="nav nav-tabs navbar-right" role="tablist">
+        <ul class="nav navbar-nav nav-tabs pull" role="tablist">
             <li><button class="btn btn-link" onclick="window.location='index.html'">Home</button></li>
 
             <li>
@@ -29,9 +33,18 @@
 
             <li><button class="btn btn-link" onclick="window.location='pages/PastWork.html'">Past Work/Experiences</button></li>
         </ul>
-    </div>
 
-    
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="https://github.com/aidan-brown" target="_blank"><img src="imgs/Github.svg" alt="Github logo" class="img-responsive" width="40em"/></a></li>
+          <li><a href="https://www.linkedin.com/in/aidan-f-brown/" target="_blank"><img src="imgs/Linkedin.svg" alt="Linkedin logo" class="img-responsive" width="40em"/></a></li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Personal Web Portollio</h1>
+    </div>
 
     <div class="container">
       <div class="row">
@@ -41,9 +54,7 @@
       </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
