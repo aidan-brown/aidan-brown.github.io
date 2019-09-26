@@ -6,52 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aidan Brown - Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <div id="wrapper">
+      <header>
+        <nav id="nav-wide" class="navbar navbar-default">
+            <div class="nav-header">
+              <p class="navbar-brand">Aidan Brown</p>
+            </div>
 
-        <div class="nav-header">
-          <p class="navbar-brand">Aidan Brown</p>
+            <ul class="nav navbar-nav nav-tabs pull" role="tablist">
+                <li><button class="btn btn-link" onclick="window.location='index.html'">Home</button></li>
+
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="projects" data-toggle="dropdown">Projects</button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="projects">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/ProjLore.html">Project Loremaster</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/MLS.html">Monogame Lighting System</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/BreakwaterQuasar.html">Breakwater/Project Quasar</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li><button class="btn btn-link" onclick="window.location='pages/AboutMe.html'">About Me</button></li>
+
+                <li><button class="btn btn-link" onclick="window.location='pages/PastWork.html'">Past Work/Experiences</button></li>
+            </ul>
+
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="https://github.com/aidan-brown" target="_blank"><img src="imgs/Github.svg" alt="Github logo" class="img-responsive" width="40em"/></a></li>
+              <li><a href="https://www.linkedin.com/in/aidan-f-brown/" target="_blank"><img src="imgs/Linkedin.svg" alt="Linkedin logo" class="img-responsive" width="40em"/></a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-narrow" class="navbar navbar-default">
+            <div class="nav-header">
+              <p class="navbar-brand">Narrow</p>
+            </div>
+
+            <ul class="nav navbar-nav pull-right" role="tablist">
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="narrow-menu" data-toggle="dropdown"><img src="imgs/menu.svg" width="50em" /></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="narrow-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/ProjLore.html">Project Loremaster</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/MLS.html">Monogame Lighting System</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/BreakwaterQuasar.html">Breakwater/Project Quasar</a></li>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="jumbotron text-center">
+          <h1>Personal Web Portollio</h1>
         </div>
 
-        <ul class="nav navbar-nav nav-tabs pull" role="tablist">
-            <li><button class="btn btn-link" onclick="window.location='index.html'">Home</button></li>
+        <div class="container">
+          <div class="row">
+            <div class="">
 
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-link dropdown-toggle" type="button" id="projects" data-toggle="dropdown">Projects</button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="projects">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/ProjLore.html">Project Loremaster</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/MLS.html">Monogame Lighting System</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/projects/BreakwaterQuasar.html">Breakwater/Project Quasar</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li><button class="btn btn-link" onclick="window.location='pages/AboutMe.html'">About Me</button></li>
-
-            <li><button class="btn btn-link" onclick="window.location='pages/PastWork.html'">Past Work/Experiences</button></li>
-        </ul>
-
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="https://github.com/aidan-brown" target="_blank"><img src="imgs/Github.svg" alt="Github logo" class="img-responsive" width="40em"/></a></li>
-          <li><a href="https://www.linkedin.com/in/aidan-f-brown/" target="_blank"><img src="imgs/Linkedin.svg" alt="Linkedin logo" class="img-responsive" width="40em"/></a></li>
-        </ul>
-        
-      </div>
-    </nav>
-
-    <div class="jumbotron text-center">
-      <h1>Personal Web Portollio</h1>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="">
-
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
+
+      <footer>
+
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>

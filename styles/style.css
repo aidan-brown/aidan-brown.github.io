@@ -1,0 +1,33 @@
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: content;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#nav-narrow{
+    display: none;
+}
+
+@media only screen and (max-width: 850px){
+    #nav-narrow{
+        display: contents;
+    }
+
+    #nav-wide{
+        display: none;
+    }
+}
