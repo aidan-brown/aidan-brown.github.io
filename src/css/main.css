@@ -1,0 +1,41 @@
+body{
+    background: #1b1b3a;
+}
+
+/* Navbar Start */
+
+.navbar-palette{
+    background: #693668;
+}
+
+.navbar-palette .nav-tabs{
+    border-color: #a74482;
+}
+
+.navbar-palette .navbar-nav .nav-item .nav-link{
+    color: whitesmoke;
+}
+
+.navbar-palette .nav-tabs .nav-item .nav-link:hover{
+    border-color: #a74482;
+    color: lightslategray;
+}
+
+.navbar-palette .navbar-nav .nav-item .active{
+    background: #f84aa7;
+    border-color: #a74482;
+}
+
+/* Navbar End */
+
+.bg-palette-dark{
+    background: #693668;
+}
+
+.bg-palette-default{
+    background: #a74482;
+}
+
+.bg-palette-light{
+    background: #f84aa7;
+}
