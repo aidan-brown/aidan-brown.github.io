@@ -12,6 +12,16 @@ body{
     border-color: #a74482;
 }
 
+.navbar-palette .navbar-nav .dropdown .active{
+    background: #f84aa7;
+    border-color: #a74482;
+}
+
+.navbar-palette .navbar-nav .dropdown .dropdown-menu{
+    background: #f84aa7;
+    border-color: #a74482;
+}
+
 .navbar-palette .navbar-nav .nav-item .nav-link{
     color: whitesmoke;
 }
