@@ -4,15 +4,48 @@ body{
 
 /* Navbar Start */
 
+.nav{
+    width: 30rem;
+}
+
 .navbar-palette{
     background: #693668;
+}
+
+.navbar-palette .navbar-brand{
+    color: #f84aa7;
+    font-size: 2rem;
+}
+
+.navbar-palette .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248,74,167, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-color: #f84aa7;
 }
 
 .navbar-palette .nav-tabs{
     border-color: #a74482;
 }
 
-.navbar-palette .navbar-nav .dropdown .active{
+.navbar-palette .navbar-nav .nav-item .nav-link{
+    color: whitesmoke;
+    font-size: 1.25rem;
+}
+
+.navbar-palette .nav-tabs .nav-item .nav-link:hover{
+    border-color: #a74482;
+    color: #f84aa7;
+}
+
+.navbar-palette .nav-tabs .nav-item .active:hover{
+    color: #693668;
+}
+
+.navbar-palette .navbar-nav .nav-item .nav-link.active{
+    background: #f84aa7;
+    border-color: #a74482;
+}
+
+.navbar-palette .navbar-nav .dropdown.show{
     background: #f84aa7;
     border-color: #a74482;
 }
@@ -22,18 +55,40 @@ body{
     border-color: #a74482;
 }
 
-.navbar-palette .navbar-nav .nav-item .nav-link{
+.navbar-palette .navbar-nav .dropdown .dropdown-menu a{
     color: whitesmoke;
 }
 
-.navbar-palette .nav-tabs .nav-item .nav-link:hover{
-    border-color: #a74482;
-    color: lightslategray;
+.navbar-palette .navbar-nav .dropdown .dropdown-menu a:hover{
+    background: #693668;
+    color: #f84aa7;
 }
 
-.navbar-palette .navbar-nav .nav-item .active{
-    background: #f84aa7;
-    border-color: #a74482;
+.navbar-palette .navbar-nav .dropdown .dropdown-menu .active{
+    background: #693668;
+}
+
+.navbar-palette .navbar-nav .dropdown .dropdown-menu .active:hover{
+    background: #693668;
+    color: #f84aa7;
+}
+
+.external-link{
+    margin: 1rem;
+}
+
+.external-link img{
+    width: 3rem;
+}
+
+@media only screen and (max-width: 992px){
+    .external-links{
+        display: none;
+    }
+
+    .nav{
+        width: 100%;
+    }
 }
 
 /* Navbar End */
