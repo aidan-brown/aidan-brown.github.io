@@ -1,11 +1,13 @@
 body{
     background: #1b1b3a;
+    font-family: 'Noto Sans HK', Arial, Helvetica, sans-serif;
 }
 
 /* Navbar Start */
 
 .nav{
     width: 30rem;
+    font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
 
 .navbar-palette{
@@ -14,7 +16,16 @@ body{
 
 .navbar-palette .navbar-brand{
     color: #f84aa7;
+    font-family: "Poiret One", Arial, Helvetica, sans-serif;
     font-size: 2rem;
+}
+
+.navbar-palette .navbar-brand:hover{
+    color: #f84aa7;
+}
+
+.navbar-palette .navbar-brand:focus{
+    color: #f84aa7;
 }
 
 .navbar-palette .navbar-toggler-icon{
@@ -36,6 +47,10 @@ body{
     color: #f84aa7;
 }
 
+.navbar-palette .nav-tabs .nav-item .nav-link:focus{
+    border-color: #a74482;
+}
+
 .navbar-palette .nav-tabs .nav-item .active:hover{
     color: #693668;
 }
@@ -45,9 +60,13 @@ body{
     border-color: #a74482;
 }
 
-.navbar-palette .navbar-nav .dropdown.show{
+.navbar-palette .navbar-nav .show .dropdown-toggle{
     background: #f84aa7;
     border-color: #a74482;
+}
+
+.navbar-palette .navbar-nav .show .nav-link:hover{
+    color: #693668;
 }
 
 .navbar-palette .navbar-nav .dropdown .dropdown-menu{
@@ -75,14 +94,29 @@ body{
 
 .external-link{
     margin: 1rem;
+    color: whitesmoke;
+}
+
+.external-link:hover{
+    color: #f84aa7;
+    text-decoration: none;
 }
 
 .external-link img{
     width: 3rem;
 }
 
+.external-links{
+    display: none;
+}
+
 @media only screen and (max-width: 992px){
     .external-links{
+        display: block;
+        text-align: center;
+    }
+
+    .external-links-icon{
         display: none;
     }
 
