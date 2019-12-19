@@ -112,6 +112,15 @@ body{
     display: none;
 }
 
+.jumbotron h1{
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1 a{
+    margin-left: 1rem;
+}
+
 @media only screen and (max-width: 992px){
     .external-links{
         display: block;
